@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style_gallery.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <style>
+        body {
+            display: grid;
+            max-width: 1440px;
+            margin-left: 135px;
+            margin-right: 135px;
+            padding-top: 10%;
+            border: 1px solid darkblue;
+
+        }
+
+        .wrap_gallery .gallery_title {
+            border: 1px solid darkblue;
+        }
+
+        .gallery_title {
+
+            height: 128px;
+            width: 453px;
+            text-transform: uppercase;
+            margin-left: 15px;
+        }
+
+        .gallery_title1 {
+            font-family: TT Hoves;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 64px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #BDBDBD;
+            text-shadow: 1px 3px 1px #dbd8d8;
+
+            ;
+
+        }
+
+        .gallery_title2 {
+
+            font-family: TT Hoves-Bold;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: 0em;
+            text-align: left;
+            text-shadow: 1px 3px 1px #dbd8d8;
+
+        }
+
+        .cell-1 {
+            margin-bottom: 30px;
+
+        }
+
+        .gallery_content {
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            padding-top: 60px;
+
+            border: 1px solid darkblue;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="wrap_gallery">
+        <div class="gallery_title">
+            <div class="gallery_title1">Галерея</div>
+            <div class="gallery_title2">Фотографий</div>
+        </div>
+        <div class="gallery_content">
+            <div class="cell-1">
+                <img src="./assets/image/img_gallery_1.png" alt="Фойе">
+            </div>
+            <div class="cell-2">
+                <img src="./assets/image/img_gallery_2.png" alt="Маяк">
+            </div>
+            <div class="cell-3">
+                <img src="./assets/image/img_gallery_3.png" alt="Окна">
+            </div>
+            <div class="cell-4">
+                <img src="./assets/image/img_gallery_4.png" alt="Маяк и Небо">
+            </div>
+            <div class="cell-5">
+                <img src="./assets/image/img_gallery_5.png" alt="Разрушенная мечеть">
+            </div>
+            <div class="cell-6">
+                <img src="./assets/image/img_gallery_6.png" alt="Внутри собора">
+            </div>
+            <div class="cell-7">
+                <img src="./assets/image/img_gallery_7.png" alt="Старый город">
+            </div>
+            <div class="cell-8">
+                <img src="./assets/image/img_gallery_8.png" alt="Колонны">
+            </div>
+            <div class="cell-9">
+                <img src="./assets/image/img_gallery_9.png" alt="Венеция">
+            </div>
+            <div class="cell-10">
+                <img src="./assets/image/img_gallery_10.png" alt="Урбан">
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
