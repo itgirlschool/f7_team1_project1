@@ -18,7 +18,8 @@
 
         h1 {
             font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 64px;
+            font-size: 4.44vw;
+            margin-right: 20px;
         }
 
         h3 {
@@ -26,8 +27,8 @@
             font-family: 'TTHoves-Regular', sans-serif;
             font-style: normal;
             font-weight: 300;
-            font-size: 64px;
-            line-height: 64px;
+            font-size: 4.44vw;
+            line-height: 4.44vw;
             color: rgba(189, 189, 189, 1);
         }
 
@@ -40,6 +41,8 @@
             display: flex;
             flex-direction: row;
             height: 829px;
+            max-width: 80%;
+            margin: auto;
         }
 
         .main_section_col1 {
@@ -47,7 +50,6 @@
             flex-direction: column;
             justify-content: flex-end;
             max-width: 80%;
-            margin: 0 auto;
         }
 
         .main_section_arrows {
@@ -62,8 +64,11 @@
             width: 70%;
             background-image: url(assets/image/main_pic.png);
             background-repeat: no-repeat;
-
             /* align-self: flex-end; */
+        }
+
+        .main_section_pic-btn {
+            align-items: flex-end;
         }
 
         .main_section_btn {
@@ -83,26 +88,23 @@
             background-color: white;
         }
 
-
-
-
         .about_us {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             gap: 30px;
             max-width: 80%;
+            height: 435px;
             margin: 10px auto;
-            /* margin-top: 100px;
-            margin-bottom: 100px; */
-            /* background-color: #FBFBFB; */
-            background-color: grey;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background-color: #FBFBFB;
         }
 
         .about_us-col1 {
             gap: 30px;
-display: flex;
-flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
 
         .about_us-col2 {
@@ -112,16 +114,14 @@ flex-direction: column;
         .about_us-text {
             margin-bottom: 50px;
             font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 16px;
+            font-size: 1.1vw;
             font-style: normal;
-            line-height: 25px;
             font-weight: 300;
+            line-height: 1.7vw;
             color: rgba(0, 0, 0, 1);
         }
-.about_us-pic1, .about_us-pic2, .about_us-pic1 {
-    max-width: 100%;
-}
-        .about_us-btn {
+
+        .about-us_btn {
             border: 0;
             text-align: center;
             padding: 30px 70px;
@@ -130,19 +130,67 @@ flex-direction: column;
             font-family: 'TTHoves-Regular', sans-serif;
             font-style: normal;
             font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
+            font-size: 0.83vw;
+            line-height: 0.83vw;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: rgba(51, 51, 51, 1);
             background-color: white;
         }
 
+        .main-tasks {
+            max-width: 80%;
+            margin: auto;
+
+        }
+
+        .tasks {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+        }
+
+.tasks_one {
+    display: flex;
+
+}
+.tasks_two {
+    display: flex;
+
+}
+.tasks_one-pic {
+    max-width: 100%;
+}
+
+
+
+        @media screen and (max-width: 1024px) {
+            .about_us-col1 {
+                display: none;
+            }
+        }
 
 
 
 
 
+        @media screen and (max-width: 768px) {
+            .main_section {
+                height: 500px;
+            }
+
+            .about_us-col1 {
+                display: none;
+            }
+
+            .about_us-col2 {
+                display: none;
+            }
+
+            .about_us {
+                height: 200px;
+            }
+        }
     </style>
 
 </head>
@@ -164,9 +212,10 @@ flex-direction: column;
             </div>
 
             <div class="main_section_pic">
-                <button class="main_section_btn">ВЗГЛЯНУТЬ&nbsp;&rarr;</button>
+                <div class="main_section_pic-btn">
+                    <button class="main_section_btn">ВЗГЛЯНУТЬ&nbsp;&rarr;</button>
+                </div>
             </div>
-
 
         </div>
 
@@ -190,10 +239,25 @@ flex-direction: column;
                     scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap
                     into electronic typesetting, remaining essentially unchanged.</p>
-                <a class="about_us-btn" href="url">ЧИТАТЬ&nbsp;&rarr;</a>
+                <a class="about-us_btn" href="url">ЧИТАТЬ&nbsp;&rarr;</a>
             </div>
         </div>
+        <div class="main-tasks">
+                <h3 class="main-tasks_title">Основные задачи</h3>
+            
+            <div class="tasks">
+                <div class="tasks_one">
+                    <img class="tasks_one-pic" src="assets/image/task1.png" alt="Первое">
+                    <p class="tasks_one-text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                </div>
+                <div class="tasks_two">
+                    <img class="tasks_two-pic" src="assets/image/task2.png" alt="Первое">
+                    <p class="tasks_two-text">Постоянно совершенствовать качество предоставляемых услуг путем обучения
+                        персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
 
+                </div>
+            </div>
+        </div>
 
 
 
