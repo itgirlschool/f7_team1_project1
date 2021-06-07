@@ -88,6 +88,7 @@
             background-color: white;
         }
 
+
         .about_us {
             display: flex;
             flex-direction: row;
@@ -96,7 +97,7 @@
             max-width: 80%;
             height: 435px;
             margin: 10px auto;
-            margin-top: 100px;
+            margin-top: 7vw;
             margin-bottom: 100px;
             background-color: #FBFBFB;
         }
@@ -114,10 +115,10 @@
         .about_us-text {
             margin-bottom: 50px;
             font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 1.1vw;
+            font-size: 16px;
             font-style: normal;
             font-weight: 300;
-            line-height: 1.7vw;
+            line-height: 25px;
             color: rgba(0, 0, 0, 1);
         }
 
@@ -130,13 +131,15 @@
             font-family: 'TTHoves-Regular', sans-serif;
             font-style: normal;
             font-weight: normal;
-            font-size: 0.83vw;
-            line-height: 0.83vw;
+            font-size: 12px;
+            line-height: 12px;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: rgba(51, 51, 51, 1);
             background-color: white;
         }
+
+
 
         .main-tasks {
             max-width: 80%;
@@ -146,21 +149,60 @@
 
         .tasks {
             display: flex;
-            /* flex-direction: row; */
-            justify-content: space-between;
+            gap: 12vw;
         }
 
-.tasks_one {
-    display: flex;
+        .tasks_one,
+        .tasks_two {
+            display: flex;
+            height: 144px;
+            gap: 30px;
+            align-items: center;
+            /* justify-content: space-between; */
 
-}
-.tasks_two {
-    display: flex;
+        }
 
-}
-.tasks_one-pic {
-    max-width: 100%;
-}
+        .tasks_one {
+            flex-basis: 40%;
+        }
+
+        .tasks_two {
+            flex-basis: 60%;
+        }
+
+
+        .tasks_one-pic,
+        .tasks_two-pic {
+            max-width: 100%;
+            object-fit: cover;
+
+        }
+
+
+
+        .tasks_one-text,
+        .tasks_two-text {
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 2.5vw;
+            color: rgba(51, 51, 51, 1);
+
+
+        }
+
+
+        .projects-pic2,
+        .projects-pic3,
+        .projects-pic4,
+        .projects-pic5 {
+            max-width: 100%;
+        }
+
+
+
+
 
 
 
@@ -168,6 +210,15 @@
             .about_us-col1 {
                 display: none;
             }
+
+            .tasks {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+            }
+
+
+
         }
 
 
@@ -175,6 +226,8 @@
 
 
         @media screen and (max-width: 768px) {
+
+
             .main_section {
                 height: 500px;
             }
@@ -190,6 +243,16 @@
             .about_us {
                 height: 200px;
             }
+
+
+            .tasks_one-text,
+            .tasks_two-text {
+                font-size: 16px;
+                line-height: 16px;
+
+
+            }
+
         }
     </style>
 
@@ -243,22 +306,49 @@
             </div>
         </div>
         <div class="main-tasks">
-                <h3 class="main-tasks_title">Основные задачи</h3>
-            
+            <h3 class="main-tasks_title">Основные задачи</h3>
+
             <div class="tasks">
                 <div class="tasks_one">
                     <img class="tasks_one-pic" src="assets/image/task1.png" alt="Первое">
-                    <p class="tasks_one-text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                    <div class="tasks_one-text">Создание комфортных условий и повышение качества обслуживания клиентов
+                    </div>
                 </div>
                 <div class="tasks_two">
                     <img class="tasks_two-pic" src="assets/image/task2.png" alt="Первое">
-                    <p class="tasks_two-text">Постоянно совершенствовать качество предоставляемых услуг путем обучения
-                        персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
-
+                    <div class="tasks_two-text">Постоянно совершенствовать качество предоставляемых услуг путем обучения
+                        персонала, закупки нового оборудования и усиленной рекламы на рынке</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
+
+            <div class="projects">
+                <h3>Наши проекты</h3>
+                <div class="projects-pic">
+                    <div class="projects-entertainment_center">
+                        <div class="projects-entertainment_center-text">ДОСУГОВЫЙ ЦЕНТР
+                        </div>
+                        <a class="projects-entertainment_center-btn" href="url">ПОДРОБНЕЕ&nbsp;&rarr;</a>
+                    </div>
+                    <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
+                    <img class="projects-pic3" src="assets/image/projects-pic3-lending.png" alt="Наш проект">
+                    <img class="projects-pic4" src="assets/image/projects-pic4-lending.png" alt="Наш проект">
+                    <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
+                </div>
+                <div class="projects-btn">
+                    <a class="projects-entertainment_center-btn" href="url">ВСЕ ПРОЕКТЫ&nbsp;&rarr;</a>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
 
 
 
