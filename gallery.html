@@ -1,123 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
     <link rel="stylesheet" href="./assets/styles/style_gallery.css">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <title>DIGITAL PROJECT</title>
+    <link rel="shortcut icon" href="assets/image/Group-92.png" type="image/svg">
     <style>
         body {
             display: grid;
-            max-width: 1440px;
-            margin-left: 135px;
-            margin-right: 135px;
+            width: 80%;
+            margin: auto;
             padding-top: 10%;
-            border: 1px solid darkblue;
-
         }
 
-        .wrap_gallery .gallery_title {
-            border: 1px solid darkblue;
-        }
 
         .gallery_title {
-
             height: 128px;
             width: 453px;
             text-transform: uppercase;
+
+        }
+
+        h1 {
             margin-left: 15px;
+            font-size: 4.44vw;
+            font-style: normal;
+            line-height: 4.44vw;
+            letter-spacing: 0em;
+            text-align: left;
+            text-shadow: 1px 3px 1px #dbd8d8;
         }
 
-        .gallery_title1 {
-            font-family: TT Hoves;
-            font-size: 64px;
-            font-style: normal;
+        .h1-1 {
+            font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
             font-weight: 300;
-            line-height: 64px;
-            letter-spacing: 0em;
-            text-align: left;
             color: #BDBDBD;
-            text-shadow: 1px 3px 1px #dbd8d8;
-
-            ;
-
         }
 
-        .gallery_title2 {
-
-            font-family: TT Hoves-Bold;
-            font-size: 64px;
-            font-style: normal;
+        .h1-2 {
+            font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
             font-weight: 700;
-            line-height: 64px;
-            letter-spacing: 0em;
-            text-align: left;
-            text-shadow: 1px 3px 1px #dbd8d8;
-
         }
 
-        .cell-1 {
-            margin-bottom: 30px;
 
+        .gallery_content_img-1 {
+            margin-bottom: 30px;
+            Width: 210px;
+            Height: 260px;
+        }
+
+        .gallery_content--title {
+            height: 36px;
+            width: 170px;
+            margin: 20px;
+            font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: start
         }
 
         .gallery_content {
             display: grid;
-
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr 1fr;
             justify-items: center;
             padding-top: 60px;
+        }
 
-            border: 1px solid darkblue;
+        .side {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between
+        }
+
+        .side_numbers {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #side_numbers {
+            height: 31px;
+            width: 142px;
+            margin: 1% 1% 1%;
         }
     </style>
+
 </head>
 
 <body>
 
     <div class="wrap_gallery">
         <div class="gallery_title">
-            <div class="gallery_title1">Галерея</div>
-            <div class="gallery_title2">Фотографий</div>
+            <h1><span class="h1-1">Галерея</span><br><span class="h1-2">Фотографий</span></h1>
+
         </div>
         <div class="gallery_content">
-            <div class="cell-1">
-                <img src="./assets/image/img_gallery_1.png" alt="Фойе">
+            <div class="gallery_content_img-1">
+                <img src="./assets/image/img_gallery_1.png" alt="Фойе" width="210px" height="150px">
+                <div class="gallery_content--title">
+                    <p>Описание или пояснение к изображению.</p>
+                </div>
             </div>
-            <div class="cell-2">
+            <div class="gallery_content_img-2">
                 <img src="./assets/image/img_gallery_2.png" alt="Маяк">
             </div>
-            <div class="cell-3">
+            <div class="gallery_content_img-3">
                 <img src="./assets/image/img_gallery_3.png" alt="Окна">
             </div>
-            <div class="cell-4">
+            <div class="gallery_content_img-4">
                 <img src="./assets/image/img_gallery_4.png" alt="Маяк и Небо">
             </div>
-            <div class="cell-5">
+            <div class="gallery_content_img-5">
                 <img src="./assets/image/img_gallery_5.png" alt="Разрушенная мечеть">
             </div>
-            <div class="cell-6">
+            <div class="gallery_content_img-6">
                 <img src="./assets/image/img_gallery_6.png" alt="Внутри собора">
             </div>
-            <div class="cell-7">
+            <div class="gallery_content_img-7">
                 <img src="./assets/image/img_gallery_7.png" alt="Старый город">
             </div>
-            <div class="cell-8">
+            <div class="gallery_content_img-8">
                 <img src="./assets/image/img_gallery_8.png" alt="Колонны">
             </div>
-            <div class="cell-9">
+            <div class="gallery_content_img-9">
                 <img src="./assets/image/img_gallery_9.png" alt="Венеция">
             </div>
-            <div class="cell-10">
+            <div class="gallery_content_img-10">
                 <img src="./assets/image/img_gallery_10.png" alt="Урбан">
             </div>
         </div>
 
+        <div class="side_numbers">
+            <img id="side_numbers" src="./assets/image/slide-numbers_gallery.png" alt="Номера страниц">
+            <img src="./assets/image/arrow-left-1.png" alt="Стрелка влево">
+            <img src="./assets/image/arrow-right-1.png" alt="Стрелка вправо">
+
+        </div>
+
     </div>
+
 
 </body>
 
