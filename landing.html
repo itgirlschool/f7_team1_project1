@@ -150,6 +150,7 @@
         .tasks {
             display: flex;
             gap: 12vw;
+            margin-bottom: 4vh;
         }
 
         .tasks_one,
@@ -188,15 +189,174 @@
             font-weight: normal;
             line-height: 2.5vw;
             color: rgba(51, 51, 51, 1);
+        }
 
+
+
+
+        .projects {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .projects-pic {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: minmax(100px, auto);
+            grid-template-areas:
+                "ec   ec   pic2 pic2 pic2"
+                "pic3 pic4 pic4 pic5 pic5";
+            gap: 20px;
+        }
+
+        .projects-entertainment_center {
+            grid-area: ec;
+            background-image: url(assets/image/projects-pic1-lending.png);
+        }
+
+
+        .projects-entertainment_center-text {
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-size: 4.44vw;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 4vw;
+            color: #FFFFFF;
 
         }
 
+        .projects-entertainment_center-btn {
+            border: 0;
+            text-align: center;
+            padding: 30px 70px;
+            text-decoration: none;
+            box-shadow: none;
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .projects-pic2 {
+            grid-area: pic2;
+            max-width: 100%;
+
+        }
+
+        .projects-pic3 {
+            grid-area: pic3;
+            max-width: 100%;
+        }
+
+        .projects-pic4 {
+            grid-area: pic4;
+            max-width: 100%;
+        }
+
+        .projects-pic5 {
+            grid-area: pic5;
+            max-width: 100%;
+        }
 
         .projects-pic2,
         .projects-pic3,
         .projects-pic4,
         .projects-pic5 {
+            max-width: 100%;
+        }
+
+        .projects_all {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .projects_all-btn {
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+
+            border: 0;
+            text-align: center;
+            padding: 30px 70px;
+            text-decoration: none;
+            box-shadow: none;
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+            background-color: #333333;
+        }
+
+
+
+
+
+        .contact-with-us {
+            max-width: 80%;
+            margin: auto;
+
+        }
+
+        .contact-with-us_form {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        #name,
+        #phone,
+        #email,
+        #product,
+        #message {
+            padding-left: 15px;
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.2vw;
+            letter-spacing: 0.04em;
+            border: none;
+
+            color: #8D8D8D;
+            background-color: #F3F3F3;
+        }
+        #message {
+        height: 10vh;
+        }
+
+        .contact-with-us_btn {
+            border: 0;
+            text-align: center;
+            padding: 30px 70px;
+            text-decoration: none;
+            box-shadow: none;
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+            background-color: #333333;
+        }
+
+        .contact-with-us_pic {
             max-width: 100%;
         }
 
@@ -217,6 +377,8 @@
                 gap: 2vw;
             }
 
+            .contact-with-us_pic {
+display: none;        }
 
 
         }
@@ -249,9 +411,8 @@
             .tasks_two-text {
                 font-size: 16px;
                 line-height: 16px;
-
-
             }
+
 
         }
     </style>
@@ -318,41 +479,47 @@
                     <img class="tasks_two-pic" src="assets/image/task2.png" alt="Первое">
                     <div class="tasks_two-text">Постоянно совершенствовать качество предоставляемых услуг путем обучения
                         персонала, закупки нового оборудования и усиленной рекламы на рынке</div>
-                    </div>
                 </div>
             </div>
-
-
-            <div class="projects">
-                <h3>Наши проекты</h3>
-                <div class="projects-pic">
-                    <div class="projects-entertainment_center">
-                        <div class="projects-entertainment_center-text">ДОСУГОВЫЙ ЦЕНТР
-                        </div>
-                        <a class="projects-entertainment_center-btn" href="url">ПОДРОБНЕЕ&nbsp;&rarr;</a>
-                    </div>
-                    <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
-                    <img class="projects-pic3" src="assets/image/projects-pic3-lending.png" alt="Наш проект">
-                    <img class="projects-pic4" src="assets/image/projects-pic4-lending.png" alt="Наш проект">
-                    <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
-                </div>
-                <div class="projects-btn">
-                    <a class="projects-entertainment_center-btn" href="url">ВСЕ ПРОЕКТЫ&nbsp;&rarr;</a>
-
-                </div>
-
-            </div>
-
-
-
-
-
-
         </div>
 
 
+        <div class="projects">
+            <h3>Наши проекты</h3>
+            <div class="projects-pic">
+                <div class="projects-entertainment_center">
+                    <div class="projects-entertainment_center-text">ДОСУГОВЫЙ ЦЕНТР
+                    </div>
+                    <a class="projects-entertainment_center-btn" href="url">ПОДРОБНЕЕ&nbsp;&rarr;</a>
+                </div>
+                <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
+                <img class="projects-pic3" src="assets/image/projects-pic3-lending.png" alt="Наш проект">
+                <img class="projects-pic4" src="assets/image/projects-pic4-lending.png" alt="Наш проект">
+                <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
+            </div>
+            <div class="projects_all">
+                <a class="projects_all-btn" href="url">ВСЕ ПРОЕКТЫ&nbsp;&rarr;</a>
+            </div>
+        </div>
 
 
+        <div class="contact-with-us">
+            <h3>Связаться с нами</h3>
+            <div class="contact-with-us_form">
+                <form>
+                    <input id="name" type="text" placeholder="Имя" />
+                    <input id="phone" type="text" placeholder="Номер телефона*" />
+                    <input id="email" type="text" placeholder="E-mail*" />
+                    <input id="product" type="text" placeholder="Интересующий товар/услуга" />
+                    <input id="message" type="text" placeholder="Сообщение*" />
+                    <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                    <a class="contact-with-us_btn" href="url">Отправить&nbsp;&rarr;</a>
+                </form>
+                <div class="contact-with-us_img">
+                    <img class="contact-with-us_pic" src="assets/image/contact-with-us.png" alt="Свяжитесь с нами">
+                </div>
+            </div>
+        </div>
 
     </main>
 
