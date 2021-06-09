@@ -48,7 +48,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 21px;
-    text-align: left;
+    text-align: justify;
 }
 
 /*Позиционирование и размер*/
@@ -71,7 +71,35 @@
 }
 
 .image_section2 {
-
     margin-top: 30px;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .content__title {
+        font-size: 4.4vw;
+    }
+
+    .main__img {
+        display: grid;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1%;
+    }
+
+    .image_section {
+        display: none;
+
+    }
+
+    .section_text {
+        text-align: justify;
+    }
 }
