@@ -123,9 +123,11 @@
     color: #333333;
 }
 
-.button__arrow {
-    width: 24px;
+.main__page-number {
+    margin-bottom: 80px;
 }
+
+
 
 @media screen and (max-width: 1023px) {
     .upper-title {
@@ -272,20 +274,24 @@
 
     .content__section {
         display: grid;
-        grid-template-rows: 1fr 50%;
+        grid-template-rows: 1fr 55%;
+
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
     .section-image {
         grid-row: 2/3;
-        width: 80vw;
+
+        width: 100%;
     }
 
     .section__conteiner {
         grid-row: 1/2;
-        padding-left: 20px;
-        padding-right: 40px;
+
+        padding-left: 2vw;
+        padding-right: 3vw;
+
         background-color: #FBFBFB;
     }
 
