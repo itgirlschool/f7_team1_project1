@@ -61,13 +61,10 @@
         }
 
         .main_section_pic {
+            display: flex;
             width: 70%;
-            background-image: url(assets/image/main_pic.png);
+            background: url(assets/image/main_pic.png);
             background-repeat: no-repeat;
-            /* align-self: flex-end; */
-        }
-
-        .main_section_pic-btn {
             align-items: flex-end;
         }
 
@@ -88,7 +85,6 @@
             background-color: white;
         }
 
-
         .about_us {
             display: flex;
             flex-direction: row;
@@ -106,10 +102,15 @@
             gap: 30px;
             display: flex;
             flex-direction: column;
+            margin-top: 30px;
         }
 
         .about_us-col2 {
             align-self: center;
+        }
+
+        .about_us-pic2 {
+            padding-bottom: 50px;
         }
 
         .about_us-text {
@@ -139,12 +140,9 @@
             background-color: white;
         }
 
-
-
         .main-tasks {
             max-width: 80%;
-            margin: auto;
-
+            margin: 100px auto;
         }
 
         .tasks {
@@ -159,8 +157,6 @@
             height: 144px;
             gap: 30px;
             align-items: center;
-            /* justify-content: space-between; */
-
         }
 
         .tasks_one {
@@ -171,15 +167,11 @@
             flex-basis: 60%;
         }
 
-
         .tasks_one-pic,
         .tasks_two-pic {
             max-width: 100%;
             object-fit: cover;
-
         }
-
-
 
         .tasks_one-text,
         .tasks_two-text {
@@ -191,9 +183,6 @@
             color: rgba(51, 51, 51, 1);
         }
 
-
-
-
         .projects {
             max-width: 80%;
             margin: auto;
@@ -201,33 +190,25 @@
 
         .projects-pic_row1 {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 20px;
-padding-bottom: 20px;
+            padding-bottom: 20px;
         }
 
         .projects-entertainment_center {
-            background-image: url(assets/image/projects-pic1-lending.png);
-            background: #333333;
-            opacity: 0.8;
-            /* background-color: transparent; */
-
-            /* flex-basis: 50%;
-            flex-grow: 1; */
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(assets/image/projects-pic1-lending.png);
             height: 255px;
         }
 
-
         .projects-entertainment_center-text {
-            padding-top: 30px;
-padding-left: 30px;
+            padding-top: 40px;
+            padding-left: 40px;
             font-family: 'TTHoves-Regular', sans-serif;
             font-size: 4.44vw;
             font-style: normal;
             font-weight: bold;
             line-height: 4vw;
             color: #FFFFFF;
-
         }
 
         .projects-entertainment_center-btn {
@@ -247,33 +228,9 @@ padding-left: 30px;
         }
 
         .projects-pic_row2 {
-
             display: flex;
-            flex-wrap: nowrap;
-
+            flex-wrap: wrap;
             gap: 20px;
-
-        }
-
-        .projects-pic2 {
-            width: 50%;
-            max-width: 100%;
-
-            /* flex-grow: 1;
-            flex-basis: 50%; */
-
-        }
-
-        .projects-pic3 {
-            max-width: 100%;
-        }
-
-        .projects-pic4 {
-            max-width: 100%;
-        }
-
-        .projects-pic5 {
-            max-width: 100%;
         }
 
         .projects-pic2,
@@ -286,16 +243,14 @@ padding-left: 30px;
         .projects_all {
             display: flex;
             justify-content: flex-end;
-
         }
 
         .projects_all-btn {
             margin-top: 1vh;
             margin-bottom: 2vh;
-
             border: 0;
             text-align: center;
-            padding: 30px 70px;
+            padding: 30px 45px;
             text-decoration: none;
             box-shadow: none;
             font-family: 'TTHoves-Regular', sans-serif;
@@ -309,14 +264,9 @@ padding-left: 30px;
             background-color: #333333;
         }
 
-
-
-
-
         .contact-with-us {
             max-width: 80%;
             margin: auto;
-
         }
 
         .contact-with-us_form {
@@ -346,7 +296,6 @@ padding-left: 30px;
             line-height: 1.2vw;
             letter-spacing: 0.04em;
             border: none;
-
             color: #8D8D8D;
             background-color: #F3F3F3;
         }
@@ -377,8 +326,15 @@ padding-left: 30px;
             max-width: 100%;
         }
 
-        p {
+        .contact-with-us_text {
             margin-left: 20px;
+            font-family: 'TTHoves-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.03em;
+            color: #333333;
         }
 
 
@@ -463,17 +419,12 @@ padding-left: 30px;
                     <img style="width: 100px;" src="assets/image/slide-numbers-1.png" alt="Стрелки">
                 </div>
             </div>
-
             <div class="main_section_pic">
                 <div class="main_section_pic-btn">
                     <button class="main_section_btn">ВЗГЛЯНУТЬ&nbsp;&rarr;</button>
                 </div>
             </div>
-
         </div>
-
-
-
 
         <div class="about_us">
             <div class="about_us-col1">
@@ -485,13 +436,13 @@ padding-left: 30px;
             </div>
             <div class="about_us-col3">
                 <h3>О компании</h3>
-                <p class="about_us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <div class="about_us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
                     scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap
-                    into electronic typesetting, remaining essentially unchanged.</p>
+                    into electronic typesetting, remaining essentially unchanged.</div>
                 <a class="about-us_btn" href="url">ЧИТАТЬ&nbsp;&rarr;</a>
             </div>
         </div>
@@ -524,7 +475,6 @@ padding-left: 30px;
                 <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
             </div>
             <div class="projects-pic_row2">
-
                 <img class="projects-pic3" src="assets/image/projects-pic3-lending.png" alt="Наш проект">
                 <img class="projects-pic4" src="assets/image/projects-pic4-lending.png" alt="Наш проект">
                 <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
@@ -545,7 +495,8 @@ padding-left: 30px;
                     <input id="email" type="text" placeholder="E-mail*" />
                     <input id="product" type="text" placeholder="Интересующий товар/услуга" />
                     <input id="message" type="text" placeholder="Сообщение*" />
-                    <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                    <div class="contact-with-us_text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                    </div>
                     <a class="contact-with-us_btn" href="url">Отправить&nbsp;&rarr;</a>
                 </form>
                 <div class="contact-with-us_img">
