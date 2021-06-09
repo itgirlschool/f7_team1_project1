@@ -1,0 +1,71 @@
+.main__conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "TT Hoves-Bold";
+    src: url("../fonts/TTHoves-Bold.ttf");
+}
+
+@font-face {
+    font-family: "TT Hoves-Light";
+    src: url("../fonts/TTHoves-Light.ttf");
+}
+
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../fonts/TTHoves-Regular.ttf");
+}
+
+
+
+
+/*Шрифты*/
+.content__title {
+    font-size: 64px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0px;
+}
+
+.upper-title {
+    font-family: 'TT Hoves-Light', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #BDBDBD;
+
+}
+
+.lower-title {
+    font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #333333;
+
+}
+
+.img__conteiner {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: stretch;
+    margin-top: 42px;
+
+}
+
+
+.side__numbers {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2%;
+
+}
+
+.numbers {
+    border: 1px solid seagreen;
+    height: 31px;
+    width: 142px;
+    margin: 1% 2% 1%;
+}
