@@ -55,7 +55,6 @@
 
 
 .side__numbers {
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -64,8 +63,36 @@
 }
 
 .numbers {
-    border: 1px solid seagreen;
     height: 31px;
     width: 142px;
     margin: 1% 2% 1%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .content__title {
+        font-size: 4.4vw;
+    }
+
+    .img__conteiner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: auto;
+    }
+
+    #img_size {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .side__numbers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
