@@ -199,23 +199,28 @@
             margin: auto;
         }
 
-        .projects-pic {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: minmax(100px, auto);
-            grid-template-areas:
-                "ec   ec   pic2 pic2 pic2"
-                "pic3 pic4 pic4 pic5 pic5";
+        .projects-pic_row1 {
+            display: flex;
+            flex-wrap: nowrap;
             gap: 20px;
+padding-bottom: 20px;
         }
 
         .projects-entertainment_center {
-            grid-area: ec;
             background-image: url(assets/image/projects-pic1-lending.png);
+            background: #333333;
+            opacity: 0.8;
+            /* background-color: transparent; */
+
+            /* flex-basis: 50%;
+            flex-grow: 1; */
+            height: 255px;
         }
 
 
         .projects-entertainment_center-text {
+            padding-top: 30px;
+padding-left: 30px;
             font-family: 'TTHoves-Regular', sans-serif;
             font-size: 4.44vw;
             font-style: normal;
@@ -241,24 +246,33 @@
             color: rgba(255, 255, 255, 1);
         }
 
+        .projects-pic_row2 {
+
+            display: flex;
+            flex-wrap: nowrap;
+
+            gap: 20px;
+
+        }
+
         .projects-pic2 {
-            grid-area: pic2;
+            width: 50%;
             max-width: 100%;
+
+            /* flex-grow: 1;
+            flex-basis: 50%; */
 
         }
 
         .projects-pic3 {
-            grid-area: pic3;
             max-width: 100%;
         }
 
         .projects-pic4 {
-            grid-area: pic4;
             max-width: 100%;
         }
 
         .projects-pic5 {
-            grid-area: pic5;
             max-width: 100%;
         }
 
@@ -314,8 +328,8 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-
+            gap: 15px;
+            width: 30%;
         }
 
         #name,
@@ -323,6 +337,7 @@
         #email,
         #product,
         #message {
+            height: 2vh;
             padding-left: 15px;
             font-family: 'TTHoves-Regular', sans-serif;
             font-size: 14px;
@@ -335,11 +350,13 @@
             color: #8D8D8D;
             background-color: #F3F3F3;
         }
+
         #message {
-        height: 10vh;
+            height: 11vh;
         }
 
         .contact-with-us_btn {
+            align-self: flex-start;
             border: 0;
             text-align: center;
             padding: 30px 70px;
@@ -360,7 +377,9 @@
             max-width: 100%;
         }
 
-
+        p {
+            margin-left: 20px;
+        }
 
 
 
@@ -377,8 +396,18 @@
                 gap: 2vw;
             }
 
+            form {
+                width: 70%;
+            }
+
+            .contact-with-us_form {
+                justify-content: center;
+            }
+
+
             .contact-with-us_pic {
-display: none;        }
+                display: none;
+            }
 
 
         }
@@ -486,13 +515,16 @@ display: none;        }
 
         <div class="projects">
             <h3>Наши проекты</h3>
-            <div class="projects-pic">
+            <div class="projects-pic_row1">
                 <div class="projects-entertainment_center">
                     <div class="projects-entertainment_center-text">ДОСУГОВЫЙ ЦЕНТР
                     </div>
                     <a class="projects-entertainment_center-btn" href="url">ПОДРОБНЕЕ&nbsp;&rarr;</a>
                 </div>
                 <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
+            </div>
+            <div class="projects-pic_row2">
+
                 <img class="projects-pic3" src="assets/image/projects-pic3-lending.png" alt="Наш проект">
                 <img class="projects-pic4" src="assets/image/projects-pic4-lending.png" alt="Наш проект">
                 <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
@@ -501,6 +533,7 @@ display: none;        }
                 <a class="projects_all-btn" href="url">ВСЕ ПРОЕКТЫ&nbsp;&rarr;</a>
             </div>
         </div>
+
 
 
         <div class="contact-with-us">
