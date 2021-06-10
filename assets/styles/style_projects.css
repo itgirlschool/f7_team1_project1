@@ -29,6 +29,10 @@
     margin: 0px;
 }
 
+.content__title {
+    text-transform: uppercase;
+}
+
 .lower-title {
     font-family: 'TTHoves-Bold', sans-serif;
     font-weight: 700;
@@ -61,6 +65,7 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.2em;
+    text-transform: uppercase;
 
     color: #333333;
 }
@@ -151,58 +156,21 @@
 
 @media screen and (max-width: 1023px) {
     .upper-title {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
         font-size: 54px;
-
-        color: #BDBDBD;
-
-        margin: 0px;
     }
 
     .lower-title {
-        font-family: 'TTHoves-Bold', sans-serif;
-        font-weight: 700;
         font-size: 54px;
-
-        color: #333333;
-
-        margin: 0px;
     }
 
     .section-title {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
         font-size: 2em;
-
-        color: #BDBDBD;
-
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    .section-text {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-    }
-
-    .section-button {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-
-        color: #333333;
     }
 
     /*позиционирование и размер*/
 
     .content__section {
         display: grid;
-
-        margin-top: 60px;
-        margin-bottom: 60px;
     }
 
     .section-image {
@@ -212,95 +180,34 @@
     .section__conteiner {
         padding-left: 20px;
         padding-right: 40px;
-
-        background-color: #FBFBFB;
     }
 
     .section-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         width: 200px;
         height: 61px;
-
-        margin-top: 30px;
-        margin-bottom: 20px;
-
-        background-color: white;
-        border: none;
-    }
-
-    .second-section__link {
-        display: flex;
-        align-items: center;
-
-        text-decoration: none;
-
-        color: #333333;
-    }
-
-    .second-section__link:visited {
-        display: flex;
-        align-items: center;
-
-        text-decoration: none;
-
-        color: #333333;
     }
 
     .page-number__numbers {
         width: 20vw;
         height: auto;
-
     }
 }
 
 @media screen and (max-width: 767px) {
     .upper-title {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
-        font-size: 2.5em;
-
-        color: #BDBDBD;
-
-        margin: 0px;
+        font-size: 2.4em;
     }
 
     .lower-title {
-        font-family: 'TTHoves-Bold', sans-serif;
-        font-weight: 700;
-        font-size: 2.5em;
-
-        color: #333333;
-
-        margin: 0px;
+        font-size: 2.4em;
     }
 
     .section-title {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
-        font-size: 6vw;
-
-        color: #BDBDBD;
-
-        margin-top: 25px;
-        margin-bottom: 25px;
+        font-size: 7vw;
     }
 
     .section-text {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 300;
-        font-size: 12px;
-    }
-
-    .section-button {
-        font-family: 'TTHoves-Light', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-
-        color: #333333;
+        font-size: 14px;
     }
 
     /*позиционирование и размер*/
@@ -324,45 +231,27 @@
 
         padding-left: 2vw;
         padding-right: 3vw;
-
-        background-color: #FBFBFB;
     }
 
     .section-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         width: 150px;
         height: 41px;
 
         margin-top: 30px;
         margin-bottom: 20px;
-
-        background-color: white;
-        border: none;
     }
 
     .second-section__link {
-        display: flex;
-        align-items: center;
-
-        text-decoration: none;
-        color: #333333;
-
         width: 150px;
         height: 41px;
 
         margin-top: 30px;
         margin-bottom: 20px;
-
-        background-color: white;
     }
 
     .page-number__numbers {
         width: 30vw;
         height: auto;
-
     }
 
     .page-number__button {
@@ -377,16 +266,5 @@
         height: 40px;
         padding: 0px;
         border: none;
-    }
-
-    .main__page-number {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-
-        gap: 10px;
-        margin-top: 50px;
-
-        margin-bottom: 80px;
     }
 }

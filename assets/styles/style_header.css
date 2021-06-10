@@ -45,6 +45,7 @@
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.15em;
+    text-transform: uppercase;
 
     color: #333333;
 }
@@ -84,13 +85,7 @@
     }
 
     .nav__link {
-        text-decoration: none;
-        font-family: 'TTHoves-Regular', Arial, Helvetica, sans-serif;
-        font-weight: normal;
         font-size: 10px;
-        letter-spacing: 0.15em;
-
-        color: #333333;
     }
 
     .nav__list {
@@ -134,16 +129,6 @@
     .nav__item {
         list-style-type: none;
         margin-left: 4vw;
-    }
-
-    .nav__link {
-        text-decoration: none;
-        font-family: 'TTHoves-Regular', Arial, Helvetica, sans-serif;
-        font-weight: normal;
-        font-size: 12px;
-        letter-spacing: 0.15em;
-
-        color: #333333;
     }
 
     .nav__item_current {
