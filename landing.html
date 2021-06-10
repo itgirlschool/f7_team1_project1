@@ -6,433 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style_landing.css">
     <title>DIGITAL PROJECT</title>
     <link rel="shortcut icon" href="assets/image/Group-92.png" type="image/svg">
-    <style>
-        @font-face {
-            font-family: 'TTHoves-Regular';
-            src: url('../fonts/TTHoves-Regular.ttf');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        h1 {
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 4.44vw;
-            margin-right: 20px;
-        }
-
-        h3 {
-            margin: 30px 0;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 4.44vw;
-            line-height: 4.44vw;
-            color: rgba(189, 189, 189, 1);
-        }
-
-        .h1-1 {
-            color: rgba(189, 189, 189, 1);
-            font-weight: 300;
-        }
-
-        .main_section {
-            display: flex;
-            flex-direction: row;
-            height: 829px;
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .main_section_col1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            max-width: 80%;
-        }
-
-        .main_section_arrows {
-            margin: 50px 0 100px 20px;
-        }
-
-        .main_section_numbers {
-            margin: 20px 0 100px 20px;
-        }
-
-        .main_section_pic {
-            display: flex;
-            width: 70%;
-            background: url(assets/image/main_pic.png);
-            background-repeat: no-repeat;
-            align-items: flex-end;
-        }
-
-        .main_section_btn {
-            border: 0;
-            text-align: center;
-            padding: 30px 54px;
-            text-decoration: none;
-            box-shadow: none;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(51, 51, 51, 1);
-            background-color: white;
-        }
-
-        .about_us {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 30px;
-            max-width: 80%;
-            height: 435px;
-            margin: 10px auto;
-            margin-top: 7vw;
-            margin-bottom: 100px;
-            background-color: #FBFBFB;
-        }
-
-        .about_us-col1 {
-            gap: 30px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
-        }
-
-        .about_us-col2 {
-            align-self: center;
-        }
-
-        .about_us-pic2 {
-            padding-bottom: 50px;
-        }
-
-        .about_us-text {
-            margin-bottom: 50px;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 25px;
-            color: rgba(0, 0, 0, 1);
-        }
-
-        .about-us_btn {
-            border: 0;
-            text-align: center;
-            padding: 30px 70px;
-            text-decoration: none;
-            box-shadow: none;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(51, 51, 51, 1);
-            background-color: white;
-        }
-
-        .main-tasks {
-            max-width: 80%;
-            margin: 100px auto;
-        }
-
-        .tasks {
-            display: flex;
-            gap: 12vw;
-            margin-bottom: 4vh;
-        }
-
-        .tasks_one,
-        .tasks_two {
-            display: flex;
-            height: 144px;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .tasks_one {
-            flex-basis: 40%;
-        }
-
-        .tasks_two {
-            flex-basis: 60%;
-        }
-
-        .tasks_one-pic,
-        .tasks_two-pic {
-            max-width: 100%;
-            object-fit: cover;
-        }
-
-        .tasks_one-text,
-        .tasks_two-text {
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 2.5vw;
-            color: rgba(51, 51, 51, 1);
-        }
-
-        .projects {
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .projects-pic_row1 {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 20px;
-            justify-content: space-between;
-            padding-bottom: 20px;
-        }
-
-        .projects-entertainment_center {
-            max-width: 50%;
-            height: initial;            
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(assets/image/projects-pic1-lending.png);
-
-            background-size: contain;
-        }
-
-        .projects-entertainment_center-text {
-            padding-top: 40px;
-            padding-left: 40px;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 4.44vw;
-            font-style: normal;
-            font-weight: bold;
-            line-height: 4vw;
-            color: #FFFFFF;
-        }
-
-        .projects-entertainment_center-btn {
-            border: 0;
-            text-align: center;
-            padding: 30px 70px;
-            text-decoration: none;
-            box-shadow: none;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 1);
-        }
-
-        .projects-pic_row2 {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .projects-pic2 {
-            max-width: 50%;
-        }
-
-        .projects-pic3 {
-            max-width: 30%;
-        }
-
-        .projects-pic4 {
-            max-width: 40%;
-        }
-
-        .projects-pic5 {
-            max-width: 30%;
-        }
-
-        .projects_all {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .projects_all-btn {
-            margin-top: 1vh;
-            margin-bottom: 2vh;
-            border: 0;
-            text-align: center;
-            padding: 30px 45px;
-            text-decoration: none;
-            box-shadow: none;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 1);
-            background-color: #333333;
-        }
-
-        .contact-with-us {
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .contact-with-us_form {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 30%;
-        }
-
-        #name,
-        #phone,
-        #email,
-        #product,
-        #message {
-            height: 2vh;
-            padding-left: 15px;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 1.2vw;
-            letter-spacing: 0.04em;
-            border: none;
-            color: #8D8D8D;
-            background-color: #F3F3F3;
-        }
-
-        #message {
-            height: 11vh;
-        }
-
-        .contact-with-us_btn {
-            align-self: flex-start;
-            border: 0;
-            text-align: center;
-            padding: 30px 70px;
-            text-decoration: none;
-            box-shadow: none;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 12px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 1);
-            background-color: #333333;
-        }
-
-        .contact-with-us_pic {
-            max-width: 100%;
-        }
-
-        .contact-with-us_text {
-            margin-left: 20px;
-            font-family: 'TTHoves-Regular', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 17px;
-            letter-spacing: 0.03em;
-            color: #333333;
-        }
-
-
-
-
-
-        @media screen and (max-width: 1024px) {
-            .about_us-col1 {
-                display: none;
-            }
-
-            .tasks {
-                display: flex;
-                flex-direction: column;
-                gap: 2vw;
-            }
-
-            form {
-                width: 70%;
-            }
-
-            .contact-with-us_form {
-                justify-content: center;
-            }
-
-            .contact-with-us_pic {
-                display: none;
-            }
-        }
-
-
-        @media screen and (max-width: 768px) {
-            .main_section {
-                height: 500px;
-            }
-
-            .about_us-col1 {
-                display: none;
-            }
-
-            .about_us-col2 {
-                display: none;
-            }
-
-            .about_us {
-                height: 20vh;
-            }
-
-
-            .tasks_one-text,
-            .tasks_two-text {
-                font-size: 16px;
-                line-height: 16px;
-            }
-
-            .projects-entertainment_center {
-                max-width: 100%
-            }
-
-            .projects-pic_row1 {
-                flex-direction: column;
-            }
-
-            .projects-pic_row2 {
-                flex-direction: column;
-            }
-
-            .projects-pic2,
-            .projects-pic3,
-            .projects-pic4,
-            .projects-pic5 {
-                max-width: 100%;
-            }
-    </style>
-
 </head>
 
 <body>
 
     <main>
 
-        <div class="main_section">
+        <section class="main_section">
             <div class="main_section_col1">
-                <h1><span class="h1-1">PROJECT</span><br><span class="h1-2">NURTOWN</span></h1>
+                <h1><span class="h1-1">Project</span><br><span class="h1-2">Nurtown</span></h1>
                 <div class="main_section_arrows">
                     <img src="assets/image/arrow-left-1.png" alt="Стрелка назад">
                     <img src="assets/image/arrow-right-1.png" alt="Стрелка вперед">
@@ -443,12 +28,12 @@
             </div>
             <div class="main_section_pic">
                 <div class="main_section_pic-btn">
-                    <button class="main_section_btn">ВЗГЛЯНУТЬ&nbsp;&rarr;</button>
+                    <button class="main_section_btn">Взглянуть&nbsp;&rarr;</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="about_us">
+        <article class="about_us">
             <div class="about_us-col1">
                 <img class="about_us-pic1" src="assets/image/Rectangle-b1.png" alt="Красивый снимок здания">
                 <img class="about_us-pic2" src="assets/image/Rectangle-b2.png" alt="Красивый снимок здания">
@@ -465,13 +50,13 @@
                     scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap
                     into electronic typesetting, remaining essentially unchanged.</div>
-                <a class="about-us_btn" href="url">ЧИТАТЬ&nbsp;&rarr;</a>
+                <a class="about-us_btn" href="url">Читать&nbsp;&rarr;</a>
             </div>
-        </div>
+        </article>
         <div class="main-tasks">
             <h3 class="main-tasks_title">Основные задачи</h3>
 
-            <div class="tasks">
+            <section class="tasks">
                 <div class="tasks_one">
                     <img class="tasks_one-pic" src="assets/image/task1.png" alt="Первое">
                     <div class="tasks_one-text">Создание комфортных условий и повышение качества обслуживания клиентов
@@ -482,17 +67,17 @@
                     <div class="tasks_two-text">Постоянно совершенствовать качество предоставляемых услуг путем обучения
                         персонала, закупки нового оборудования и усиленной рекламы на рынке</div>
                 </div>
-            </div>
+            </section>
         </div>
 
 
-        <div class="projects">
+        <article class="projects">
             <h3>Наши проекты</h3>
             <div class="projects-pic_row1">
                 <div class="projects-entertainment_center">
-                    <div class="projects-entertainment_center-text">ДОСУГОВЫЙ ЦЕНТР
+                    <div class="projects-entertainment_center-text">Досуговый центр
                     </div>
-                    <a class="projects-entertainment_center-btn" href="url">ПОДРОБНЕЕ&nbsp;&rarr;</a>
+                    <a class="projects-entertainment_center-btn" href="url">Подробнее&nbsp;&rarr;</a>
                 </div>
                 <img class="projects-pic2" src="assets/image/projects-pic2-lending.png" alt="Наш проект">
             </div>
@@ -502,11 +87,9 @@
                 <img class="projects-pic5" src="assets/image/projects-pic5-lending.png" alt="Наш проект">
             </div>
             <div class="projects_all">
-                <a class="projects_all-btn" href="url">ВСЕ ПРОЕКТЫ&nbsp;&rarr;</a>
+                <a class="projects_all-btn" href="url">Все проекты&nbsp;&rarr;</a>
             </div>
-        </div>
-
-
+        </article>
 
         <div class="contact-with-us">
             <h3>Связаться с нами</h3>
@@ -517,8 +100,8 @@
                     <input id="email" type="text" placeholder="E-mail*" />
                     <input id="product" type="text" placeholder="Интересующий товар/услуга" />
                     <input id="message" type="text" placeholder="Сообщение*" />
-                    <div class="contact-with-us_text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
-                    </div>
+                    <label class="contact-with-us_text"><input type="checkbox" checked="checked" />Отправляя заявку Вы
+                        соглашаетесь с политикой конфиденциальности</label>
                     <a class="contact-with-us_btn" href="url">Отправить&nbsp;&rarr;</a>
                 </form>
                 <div class="contact-with-us_img">
@@ -528,7 +111,6 @@
         </div>
 
     </main>
-
 
 </body>
 

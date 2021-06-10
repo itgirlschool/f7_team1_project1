@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'TTHoves-Regular';
+    src: url('../fonts/TTHoves-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    max-width: 1440px;
+}
+
+h1 {
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 64px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 30px 0;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 4.44vw;
+    color: rgba(189, 189, 189, 1);
+}
+
+.h1-1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgba(189, 189, 189, 1);
+}
+
+.main_section {
+    display: flex;
+    flex-direction: row;
+    height: 829px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.main_section_col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 80%;
+}
+
+.main_section_arrows {
+    margin: 50px 0 100px 20px;
+}
+
+.main_section_numbers {
+    margin: 20px 0 100px 20px;
+}
+
+.main_section_pic {
+    display: flex;
+    width: 70%;
+    background: url(../image/main_pic.png);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+
+.main_section_btn {
+    border: 0;
+    text-align: center;
+    padding: 30px 54px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+    background-color: white;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 80%;
+    margin: 10px auto;
+    margin-top: 7vw;
+    margin-bottom: 100px;
+    background-color: #FBFBFB;
+}
+
+.about_us-col1 {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.about_us-col2 {
+    align-self: center;
+}
+
+.about_us-pic2 {
+    padding-bottom: 50px;
+}
+
+.about_us-text {
+    margin-bottom: 50px;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-us_btn {
+    border: 0;
+    text-align: center;
+    padding: 30px 70px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+    background-color: white;
+}
+
+.main-tasks {
+    max-width: 80%;
+    margin: 100px auto;
+}
+
+.tasks {
+    display: flex;
+    gap: 12vw;
+    margin-bottom: 4vh;
+}
+
+.tasks_one,
+.tasks_two {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.tasks_one {
+    flex-basis: 40%;
+}
+
+.tasks_two {
+    flex-basis: 60%;
+}
+
+.tasks_one-pic,
+.tasks_two-pic {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.tasks_one-text,
+.tasks_two-text {
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 36px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.projects {
+    max-width: 80%;
+    margin: auto;
+}
+
+.projects-pic_row1 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.projects-entertainment_center {
+    max-width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(assets/image/projects-pic1-lending.png);
+    background-size: contain;
+}
+
+.projects-entertainment_center-text {
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.projects-entertainment_center-btn {
+    border: 0;
+    text-align: center;
+    padding: 30px 70px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.projects-pic_row2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects-pic2 {
+    max-width: 50%;
+}
+
+.projects-pic3 {
+    max-width: 30%;
+}
+
+.projects-pic4 {
+    max-width: 40%;
+}
+
+.projects-pic5 {
+    max-width: 30%;
+}
+
+.projects_all {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects_all-btn {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border: 0;
+    text-align: center;
+    padding: 30px 45px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    background-color: #333333;
+}
+
+.contact-with-us {
+    max-width: 80%;
+    margin: auto;
+}
+
+.contact-with-us_form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+#name,
+#phone,
+#email,
+#product,
+#message {
+    height: 2vh;
+    padding-left: 15px;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2vw;
+    letter-spacing: 0.04em;
+    border: none;
+    color: #8D8D8D;
+    background-color: #F3F3F3;
+}
+
+#message {
+    height: 11vh;
+}
+
+.contact-with-us_btn {
+    align-self: flex-start;
+    border: 0;
+    text-align: center;
+    padding: 30px 70px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    background-color: #333333;
+}
+
+.contact-with-us_pic {
+    max-width: 100%;
+}
+
+.contact-with-us_text {
+    margin-left: 20px;
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .about_us-col1 {
+        display: none;
+    }
+
+    .tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .projects-entertainment_center-text {
+        padding-left: 40px;
+        font-family: 'TTHoves-Regular', sans-serif;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .contact-with-us_form {
+        justify-content: center;
+    }
+
+    .contact-with-us_pic {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h3 {
+        margin: 30px 0;
+        font-size: 8vw;
+        line-height: 4.44vw;
+        color: rgba(189, 189, 189, 1);
+    }
+
+    .main_section_pic {
+        display: none;
+    }
+
+    .main_section_arrows {
+        display: none;
+    }
+
+    .main_section_numbers {
+        display: none;
+    }
+
+    .main_section_col1 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main_section {
+        height: auto;
+    }
+
+    .about_us-col1 {
+        display: none;
+    }
+
+    .about_us-col2 {
+        display: none;
+    }
+
+    .about_us-col3 {
+        margin: 10px;
+    }
+
+    .about-us_btn {
+        padding: 3vw 3vw;
+    }
+
+    .about_us-text {
+        line-height: normal;
+    }
+
+    .main-tasks {
+        margin: 0 auto;
+    }
+
+    .tasks_one-text,
+    .tasks_two-text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .projects-entertainment_center {
+        max-width: 100%
+    }
+
+    .projects-entertainment_center-text {
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 4vw;
+        line-height: 2vw;
+    }
+
+    .projects-pic_row1 {
+        flex-direction: column;
+    }
+
+    .projects-pic_row2 {
+        flex-direction: column;
+    }
+
+    .projects-pic2,
+    .projects-pic3,
+    .projects-pic4,
+    .projects-pic5 {
+        max-width: 100%;
+    }
+
+    .projects_all-btn {
+        padding: 3vw 4vw;
+    }
+
+    .contact-with-us_btn {
+        padding: 3vw 4vw;
+    }
+
+    #name,
+    #phone,
+    #email,
+    #product,
+    #message {
+        padding-left: 2px;
+        font-size: 10px;
+        line-height: 0.2vw;
+        letter-spacing: 0.001em;
+    }
+
+}
