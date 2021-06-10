@@ -190,14 +190,18 @@
 
         .projects-pic_row1 {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             gap: 20px;
+            justify-content: space-between;
             padding-bottom: 20px;
         }
 
         .projects-entertainment_center {
+            max-width: 50%;
+            height: initial;            
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(assets/image/projects-pic1-lending.png);
-            height: 255px;
+
+            background-size: contain;
         }
 
         .projects-entertainment_center-text {
@@ -229,15 +233,25 @@
 
         .projects-pic_row2 {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
             gap: 20px;
         }
 
-        .projects-pic2,
-        .projects-pic3,
-        .projects-pic4,
+        .projects-pic2 {
+            max-width: 50%;
+        }
+
+        .projects-pic3 {
+            max-width: 30%;
+        }
+
+        .projects-pic4 {
+            max-width: 40%;
+        }
+
         .projects-pic5 {
-            max-width: 100%;
+            max-width: 30%;
         }
 
         .projects_all {
@@ -360,21 +374,13 @@
                 justify-content: center;
             }
 
-
             .contact-with-us_pic {
                 display: none;
             }
-
-
         }
 
 
-
-
-
         @media screen and (max-width: 768px) {
-
-
             .main_section {
                 height: 500px;
             }
@@ -388,7 +394,7 @@
             }
 
             .about_us {
-                height: 200px;
+                height: 20vh;
             }
 
 
@@ -398,8 +404,24 @@
                 line-height: 16px;
             }
 
+            .projects-entertainment_center {
+                max-width: 100%
+            }
 
-        }
+            .projects-pic_row1 {
+                flex-direction: column;
+            }
+
+            .projects-pic_row2 {
+                flex-direction: column;
+            }
+
+            .projects-pic2,
+            .projects-pic3,
+            .projects-pic4,
+            .projects-pic5 {
+                max-width: 100%;
+            }
     </style>
 
 </head>
