@@ -1,23 +1,7 @@
-.main__conteiner {
-    width: 80%;
-    margin: 0 auto;
-}
+@import url("./fonts.css");
+@import url(./common.css);
 
 /*шрифты*/
-
-@font-face {
-    font-family: 'TTHoves-Light';
-    src: url('../fonts/TTHoves-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TTHoves-Bold';
-    src: url('../fonts/TTHoves-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
 
 .upper-title {
     font-family: 'TTHoves-Light', sans-serif;
