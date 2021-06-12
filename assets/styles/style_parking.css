@@ -65,6 +65,10 @@
 
 }
 
+#image_office{
+    width: 100%;
+}
+
 .image_section {
     width: 100%;
     object-fit: cover;
@@ -78,7 +82,7 @@
 @media screen and (max-width: 1024px) {
 
     .content__title {
-        font-size: 4.4vw;
+        font-size: 54px;
     }
 
     .main__img {
@@ -96,10 +100,16 @@
 
     .image_section {
         display: none;
-
     }
 
     .section_text {
         text-align: justify;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content__title {
+        font-size: 7.9vw;
     }
 }
