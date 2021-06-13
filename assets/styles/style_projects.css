@@ -56,10 +56,15 @@
 
 /*позиционирование и размер*/
 
+.first-section {
+    border-top: 1px solid #F2F2F2;
+    padding-top: 30px;
+}
+
 .content__section {
     display: flex;
 
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -238,17 +243,7 @@
         height: auto;
     }
 
-    .page-number__button {
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-        border: none;
-    }
-
-    .page-number__button-arrow {
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-        border: none;
+    .page-number__numbers {
+        display: none;
     }
 }

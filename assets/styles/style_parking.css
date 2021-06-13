@@ -1,25 +1,6 @@
-.main__conteiner {
-    width: 80%;
-    margin: 0 auto;
+@import url(./fonts.css);
+@import url(./common.css);
 
-}
-
-
-
-@font-face {
-    font-family: "TT Hoves-Bold";
-    src: url("../fonts/TTHoves-Bold.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves-Light";
-    src: url("../fonts/TTHoves-Light.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves";
-    src: url("../fonts/TTHoves-Regular.ttf");
-}
 
 /*Шрифты*/
 .content__title {
@@ -65,7 +46,7 @@
 
 }
 
-#image_office{
+#image_office {
     width: 100%;
 }
 
