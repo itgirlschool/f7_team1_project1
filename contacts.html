@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DIGITAL PROJECT</title>
+    <style>
+        .contacts_container {
+            display: grid;
+            font-family: 'TT Hoves-Regular', Arial, Helvetica, sans-serif;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 1fr);
+         
+}
+
+        .img_map {
+            grid-column: 2 / 3;
+            padding-left: 2em;
+        }
+
+        h1 {
+            font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 64px;
+        }
+
+        .contact_info_gray {
+            color: #BDBDBD;
+        }
+
+
+
+span .digital_project {
+    color: #BDBDBD;
+}
+        .phone_number {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .email_address {
+
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .button_contacts {
+            text-transform: uppercase;
+
+        @font-face {
+            font-family: "TT Hoves";
+            src: url("../fonts/TTHoves-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "TT Hoves-Bold";
+            src: url("../fonts/TTHoves-Bold.ttf");
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="contacts_container">
+        <div class="contacts_text">
+            <h1 class="contact_info_gray">Контактная</h1>
+                <h1 class="contact-info_normal">информация</h1>
+            <div class="digital_project">«Digital Project» <br>
+                г. Караганда, ул. Телевизионная 10</div>
+            <div class="phone_number">
+                +7 (701) 77 76 811
+            </div>
+            <div class="email_address">Galym.sultanov@mail.ru </div>
+            <div class="button_contacts">
+                Обратная связь</div>
+        </div>
+        <div class="img_map"><img src="assets/image/map.png" alt="карта"></div>
+    </div>
 </body>
+
 </html>
