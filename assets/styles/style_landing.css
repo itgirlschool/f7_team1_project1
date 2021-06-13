@@ -1,13 +1,6 @@
-@font-face {
-    font-family: 'TTHoves-Regular';
-    src: url('../fonts/TTHoves-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(./common.css);
+@import url(./fonts.css);
 
-body {
-    max-width: 1440px;
-}
 
 h1 {
     font-family: 'TTHoves-Regular', sans-serif;
@@ -26,6 +19,10 @@ h3 {
     color: rgba(189, 189, 189, 1);
 }
 
+.about_us-title {
+    font-size: 4.5vw;
+}
+
 .h1-1 {
     font-weight: 300;
     text-transform: uppercase;
@@ -36,8 +33,6 @@ h3 {
     display: flex;
     flex-direction: row;
     height: 829px;
-    max-width: 80%;
-    margin: auto;
 }
 
 .main_section_col1 {
@@ -85,7 +80,7 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    max-width: 80%;
+
     margin: 10px auto;
     margin-top: 7vw;
     margin-bottom: 100px;
@@ -135,7 +130,6 @@ h3 {
 }
 
 .main-tasks {
-    max-width: 80%;
     margin: 100px auto;
 }
 
@@ -176,23 +170,19 @@ h3 {
     color: rgba(51, 51, 51, 1);
 }
 
-.projects {
-    max-width: 80%;
-    margin: auto;
-}
-
 .projects-pic_row1 {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 2%;
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
 .projects-entertainment_center {
-    max-width: 50%;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(assets/image/projects-pic1-lending.png);
+    max-width: 49%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgb(51, 51, 51, 80)), url(../image/projects-pic1-lending.png);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .projects-entertainment_center-text {
@@ -227,23 +217,23 @@ h3 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.5%;
 }
 
 .projects-pic2 {
-    max-width: 50%;
+    max-width: 49%;
 }
 
 .projects-pic3 {
-    max-width: 30%;
+    max-width: 29%;
 }
 
 .projects-pic4 {
-    max-width: 40%;
+    max-width: 39%;
 }
 
 .projects-pic5 {
-    max-width: 30%;
+    max-width: 29%;
 }
 
 .projects_all {
@@ -270,10 +260,6 @@ h3 {
     background-color: #333333;
 }
 
-.contact-with-us {
-    max-width: 80%;
-    margin: auto;
-}
 
 .contact-with-us_form {
     display: flex;
@@ -344,10 +330,7 @@ form {
 }
 
 
-
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .about_us-col1 {
         display: none;
     }
@@ -379,7 +362,7 @@ form {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     h1 {
         font-size: 10vw;
@@ -393,11 +376,26 @@ form {
     }
 
     .main_section_pic {
-        display: none;
+        background-image: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .main_section {
+        display: grid;
+
+        background-image: url(../image/main_pic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main_section_btn {
+        padding: 30px 5vw;
     }
 
     .main_section_arrows {
-        display: none;
+        margin: 150px 0 20px 20px;
+        justify-self: flex-end;
     }
 
     .main_section_numbers {
@@ -437,21 +435,41 @@ form {
         margin: 0 auto;
     }
 
+    .tasks_one-pic,
+    .tasks_two-pic {
+        display: none;
+    }
+
+    .tasks_one-text {
+        background-image: url(../image/task1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .tasks_two-text {
+        background-image: url(../image/task2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     .tasks_one-text,
     .tasks_two-text {
         font-size: 16px;
         line-height: 16px;
+        padding: 5vw;
     }
 
     .projects-entertainment_center {
-        max-width: 100%
+        max-width: 100%;
+        margin-bottom: 10px;
+        background-size: cover;
+        height: 150px;
     }
 
     .projects-entertainment_center-text {
         padding-top: 10px;
         padding-left: 20px;
-        font-size: 4vw;
-        line-height: 2vw;
+        font-size: 6vw;
     }
 
     .projects-pic_row1 {
@@ -467,6 +485,7 @@ form {
     .projects-pic4,
     .projects-pic5 {
         max-width: 100%;
+        margin-bottom: 10px;
     }
 
     .projects_all-btn {
