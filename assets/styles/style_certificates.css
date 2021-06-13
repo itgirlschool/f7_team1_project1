@@ -52,21 +52,10 @@
 
 .side__numbers {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    gap: 3%;
     margin-right: 2%;
-
-}
-
-.numbers {
-    width: 12vw;
-    height: auto;
-    margin: 1% 2% 1%;
-}
-
-.arrow {
-    padding: 0px;
-    border: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -83,7 +72,7 @@
         margin: auto;
     }
 
-    #img_size {
+    .img_size {
         width: 100%;
     }
 
@@ -107,4 +96,11 @@
         font-size: 7.9vw;
     }
 
+    .numbers {
+        display: none;
+    }
+
+    .side__numbers {
+        justify-content: center;
+    }
 }
