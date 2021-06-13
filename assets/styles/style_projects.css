@@ -1,5 +1,5 @@
-@import url("./fonts.css");
-@import url(./common.css);
+@import url('./fonts.css');
+@import url('./common.css');
 
 /*шрифты*/
 
@@ -55,6 +55,10 @@
 }
 
 /*позиционирование и размер*/
+
+.main {
+    margin-top: 50px;
+}
 
 .first-section {
     border-top: 1px solid #F2F2F2;
@@ -158,6 +162,11 @@
 
     /*позиционирование и размер*/
 
+
+    .main {
+        margin-top: 20px;
+    }
+
     .content__section {
         display: grid;
     }
@@ -201,6 +210,11 @@
 
     /*позиционирование и размер*/
 
+
+    .main {
+        margin-top: 0px;
+    }
+
     .content__section {
         display: grid;
         grid-template-rows: 1fr 55%;
@@ -239,11 +253,11 @@
     }
 
     .page-number__numbers {
-        width: 30vw;
-        height: auto;
+        display: none;
     }
 
-    .page-number__numbers {
-        display: none;
+    .main__page-number {
+        display: flex;
+        justify-content: space-between;
     }
 }
