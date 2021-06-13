@@ -11,7 +11,7 @@ image {
 
 footer {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr) 2fr;
     gap: 2rem;
     padding: 5vh;
 
@@ -20,18 +20,23 @@ footer {
 
     background-color: rgb(44, 44, 44);
     color: white;
-    font: 'Open Sans', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .social,
 .information,
 .social,
 .contact {
-    font-family: 'TT Hoves';
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'TT Hoves-Bold';
     font-size: 16px;
     line-height: 20px;
+
+}
+
+.menu,
+.contacts,
+.sm {
+    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
 }
 
 .contacts {
@@ -52,15 +57,34 @@ footer {
     grid-column: 1/9;
 }
 
+.address {
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
 .copywrite {
     grid-column: 1 / 5;
     color: rgba(200, 200, 200, 0.5);
     text-align: center;
-    border-color: rgba(200, 200, 200, 0.5);
-    ;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    padding: 2em;
 }
+
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Medium'), local('TT-Hoves-Medium'),
+        url('TTHoves-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Hoves-Bold";
+    src: url("../fonts/TTHoves-Bold.ttf");
 }
