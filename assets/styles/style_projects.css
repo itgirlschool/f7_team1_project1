@@ -1,23 +1,7 @@
-.main__conteiner {
-    width: 80%;
-    margin: 0 auto;
-}
+@import url("./fonts.css");
+@import url(./common.css);
 
 /*шрифты*/
-
-@font-face {
-    font-family: 'TTHoves-Light';
-    src: url('../fonts/TTHoves-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TTHoves-Bold';
-    src: url('../fonts/TTHoves-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
 
 .upper-title {
     font-family: 'TTHoves-Light', sans-serif;
@@ -72,10 +56,15 @@
 
 /*позиционирование и размер*/
 
+.first-section {
+    border-top: 1px solid #F2F2F2;
+    padding-top: 30px;
+}
+
 .content__section {
     display: flex;
 
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -254,17 +243,7 @@
         height: auto;
     }
 
-    .page-number__button {
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-        border: none;
-    }
-
-    .page-number__button-arrow {
-        width: 40px;
-        height: 40px;
-        padding: 0px;
-        border: none;
+    .page-number__numbers {
+        display: none;
     }
 }

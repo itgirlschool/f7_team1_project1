@@ -1,30 +1,22 @@
-@font-face {
-    font-family: 'TTHoves-Regular';
-    src: url('../fonts/TTHoves-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(./fonts.css);
+@import url(./common.css);
 
 .header {
     display: flex;
     align-items: center;
 
-    max-width: 1440px;
     height: 102px;
 }
 
 
 .header__conteiner {
     display: grid;
-    grid-template-columns: 70px 1fr 62% 0px;
-
-    width: 80%;
-    margin: auto;
+    grid-template-columns: 70px 20vw 62% 0px;
 }
 
 .nav {
     width: 62%;
-    grid-column: 3/4;
+    grid-column: 3/5;
 }
 
 
@@ -36,7 +28,7 @@
 
 .nav__item {
     list-style-type: none;
-    margin-right: 4vw;
+    margin-right: 3vw;
 }
 
 .nav__link {
@@ -70,18 +62,12 @@
 
 @media screen and (max-width: 1023px) {
     .header {
-        display: flex;
-        align-items: center;
-
         height: 82px;
     }
 
     .header__conteiner {
         display: flex;
         justify-content: space-between;
-
-        width: 90%;
-        margin: auto;
     }
 
     .nav__link {
@@ -138,9 +124,6 @@
     .header__conteiner {
         display: flex;
         justify-content: space-between;
-
-        width: 80%;
-        margin: auto;
     }
 
     .nav {
