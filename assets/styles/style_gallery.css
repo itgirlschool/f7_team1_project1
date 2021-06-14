@@ -1,24 +1,6 @@
-.main__conteiner {
-    width: 80%;
-    margin: 0 auto;
+@import url("./fonts.css");
+@import url(./common.css);
 
-}
-
-
-@font-face {
-    font-family: "TT Hoves-Bold";
-    src: url("../fonts/TTHoves-Bold.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves-Light";
-    src: url("../fonts/TTHoves-Light.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves";
-    src: url("../fonts/TTHoves-Regular.ttf");
-}
 
 /*Шрифты*/
 .content__title {
@@ -104,12 +86,29 @@
     .gallery__list {
         display: grid;
 
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 31% 31% 31%;
         grid-template-rows: repeat(3, 33%);
         justify-items: center;
-        gap: 2vw;
+        justify-content: space-between;
         padding-top: 30px;
         padding-bottom: 71px;
+    }
+
+    .gallery__img {
+        display: none;
+    }
+
+    .numbers {
+        display: none;
+    }
+
+    .side__numbers {
+        display: block;
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: space-between;
     }
 
     img {
@@ -119,7 +118,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .content__title {
         font-size: 7.9vw;
@@ -127,7 +126,7 @@
 
     .gallery__list {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 31% 31% 31%;
         grid-template-rows: repeat(3, 33%);
         justify-items: center;
         gap: 2vw;
@@ -146,6 +145,11 @@
     }
 
     .side__numbers {
-        justify-content: center;
+        display: block;
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: space-between;
     }
 }

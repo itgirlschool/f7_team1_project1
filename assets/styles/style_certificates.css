@@ -1,22 +1,5 @@
-.main__conteiner {
-    width: 80%;
-    margin: 0 auto;
-}
-
-@font-face {
-    font-family: "TT Hoves-Bold";
-    src: url("../fonts/TTHoves-Bold.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves-Light";
-    src: url("../fonts/TTHoves-Light.ttf");
-}
-
-@font-face {
-    font-family: "TT Hoves";
-    src: url("../fonts/TTHoves-Regular.ttf");
-}
+@import url("./fonts.css");
+@import url(./common.css);
 
 /*Шрифты*/
 .content__title {
@@ -58,7 +41,7 @@
     margin-right: 2%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
     .content__title {
         font-size: 4.4vw;
@@ -76,21 +59,22 @@
         width: 100%;
     }
 
-    .side__numbers {
-        margin-bottom: 10%;
-        justify-content: flex-end;
-    }
-
     .numbers {
-        width: 20vw;
-        height: auto;
+        display: none;
     }
 
+    .side__numbers {
+        display: block;
+    }
 
+    .arrow {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .content__title {
         font-size: 7.9vw;
@@ -101,6 +85,11 @@
     }
 
     .side__numbers {
-        justify-content: center;
+        display: block;
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: space-between;
     }
 }

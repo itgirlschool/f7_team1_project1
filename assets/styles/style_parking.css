@@ -59,8 +59,10 @@
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
-@media screen and (max-width: 1024px) {
+.image_size{
+    width: 100%;
+}
+@media screen and (max-width: 1023px) {
 
     .content__title {
         font-size: 54px;
@@ -88,7 +90,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .content__title {
         font-size: 7.9vw;
