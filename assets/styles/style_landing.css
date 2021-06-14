@@ -1,6 +1,6 @@
 @import url(./common.css);
 @import url(./fonts.css);
-
+@import url(./style_footer.css);
 
 h1 {
     font-family: 'TTHoves-Regular', sans-serif;
@@ -535,6 +535,10 @@ form {
         font-size: 10px;
         line-height: 0.2vw;
         letter-spacing: 0.001em;
+    }
+
+    .contact-with-us_text {
+        margin-left: 0px;
     }
 
 }
