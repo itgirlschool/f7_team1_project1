@@ -1,89 +1,74 @@
- .contacts_container {
-     display: grid;
-     font-family: 'TT Hoves', Helvetica, sans-serif;
-     grid-template-columns: 2fr 3fr;
-     max-width: 80%;
- }
+@import url(./fonts.css);
+@import url(./common.css);
 
- .contacts_text {
-     padding-left: 42%;
- }
 
- .img_map {
-     grid-column: 2 / 3;
-     padding-left: 4em;
-     margin-left: 25%;
- }
+.contacts_container {
+    display: grid;
+    font-family: 'TT Hoves', Helvetica, sans-serif;
+    grid-template-columns: 2fr 3fr;
 
- .contact_info_gray,
- .contact_info_normal {
+}
 
-     text-transform: uppercase;
-     font-size: 64px;
-     line-height: 64px;
- }
+.img_map {
+    grid-column: 2 / 3;
+    padding-left: 4em;
 
- .contact_info_gray {
-     color: #BDBDBD;
-     padding-top: 0.5em;
-     font-family: 'TT Hoves-Light', Helvetica, sans-serif;
-     font-weight: 300;
- }
+}
 
- .contact_info_normal {
-     padding-bottom: 1em;
-     font-family: 'TT Hoves-Bold', Helvetica, sans-serif;
-     font-weight: bold;
- }
+.contact_info_gray,
+.contact_info_normal {
 
- .digital_project {
-     font-family: 'TT Hoves', Helvetica, sans-serif;
-     padding-bottom: 2.5em;
-     line-height: 22px;
- }
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 64px;
+}
 
- span {
-     font-style: normal;
-     font-weight: bold;
- }
+.contact_info_gray {
+    color: #BDBDBD;
+    padding-top: 0.5em;
+    font-family: 'TT Hoves-Light', Helvetica, sans-serif;
+    font-weight: 300;
+}
 
- .phone_number {
-     font-style: normal;
-     font-weight: bold;
-     font-size: 18px;
-     line-height: 22px;
-     padding-bottom: 3.5em;
- }
+.contact_info_normal {
+    padding-bottom: 1em;
+    font-family: 'TT Hoves-Bold', Helvetica, sans-serif;
+    font-weight: bold;
+}
 
- .email_address {
-     font-size: 16px;
-     line-height: 20px;
-     color: #333333;
- }
+.digital_project {
+    font-family: 'TT Hoves', Helvetica, sans-serif;
+    padding-bottom: 2.5em;
+    line-height: 22px;
+}
 
- button {
-     text-transform: uppercase;
-     background-color: #333333;
-     color: white;
-     height: 6em;
-     width: 18em;
-     margin-top: 2em;
-     font-size: 0.8em;
-     font-family: 'TT Hoves', Helvetica, sans-serif;
-     letter-spacing: 0.2em;
- }
+span {
+    font-style: normal;
+    font-weight: bold;
+}
 
- @font-face {
-     font-family: "TT Hoves";
-     src: url("../fonts/TTHoves-Regular.ttf");
- }
+.phone_number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 3.5em;
+}
 
- @font-face {
-     font-family: "TT Hoves-Bold";
-     src: url("../fonts/TTHoves-Bold.ttf");
- }
+.email_address {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
 
- @font-face {
-     font-family: "TT Hoves-Light";
-     src: url("../fonts/TTHoves-Light.ttf");
- }
+button {
+    text-transform: uppercase;
+    background-color: #333333;
+    color: white;
+    height: 6em;
+    width: 18em;
+    margin-top: 2em;
+    font-size: 0.8em;
+    font-family: 'TT Hoves', Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+}
