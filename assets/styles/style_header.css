@@ -66,8 +66,8 @@
     }
 
     .header__conteiner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 70px 10vw 80% 0px;
     }
 
     .nav__link {
@@ -90,7 +90,7 @@
     }
 
     .nav {
-        width: 80%;
+        width: 90%;
     }
 
     #menuToggle {
