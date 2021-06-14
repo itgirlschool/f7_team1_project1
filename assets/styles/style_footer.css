@@ -1,11 +1,9 @@
+@import url(./fonts.css);
+
 footer,
 .info,
-.contacts,
-.sm,
-.copywrite,
-image {
+.contacts {
     display: grid;
-    border-color: red;
     gap: 1rem;
 }
 
@@ -15,7 +13,7 @@ footer {
     gap: 2rem;
     padding: 4% 2% 0% 7%;
 
-    max-width: 100%;
+    max-width: 1440px;
 
 
     background-color: rgb(44, 44, 44);
@@ -27,7 +25,7 @@ footer {
 .information,
 .social,
 .contact {
-    font-family: 'TT Hoves-Bold';
+    font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
 
@@ -76,15 +74,79 @@ a {
     text-decoration: none;
 }
 
-@font-face {
-    font-family: 'TT Hoves';
-    src: local('TT Hoves Medium'), local('TT-Hoves-Medium'),
-        url('TTHoves-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+.sm__list {
+    display: flex;
+    margin-top: 20px;
 }
 
-@font-face {
-    font-family: "TT Hoves-Bold";
-    src: url("../fonts/TTHoves-Bold.ttf");
+.image {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer__logo {
+        width: 70px;
+    }
+
+    footer {
+        grid-template-columns: 0.5fr 1.5fr 3fr 2fr;
+        grid-template-rows: 2fr 0.1fr;
+        gap: 2rem;
+        padding: 4% 2% 0% 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__logo {
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10% 10%;
+        gap: 1rem;
+        padding: 4% 2% 0% 2%;
+    }
+
+    .sm {
+        grid-area: 3/1/4/2;
+        margin-top: 0px;
+    }
+
+    .info {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .copywrite {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        padding: 0em;
+    }
+
+    .social,
+    .information,
+    .social,
+    .contact,
+    .menu,
+    .address,
+    .phone,
+    .e-mail {
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .contacts {
+        grid-template-columns: 5% 95%;
+        grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+        gap: 0.5rem;
+    }
+
 }
