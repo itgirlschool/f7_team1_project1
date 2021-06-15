@@ -45,7 +45,7 @@
 
 .gallery__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 18%);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     gap: 30px;
@@ -68,7 +68,9 @@
     align-items: center;
     gap: 3%;
 }
-
+img {
+    max-width: 100%;
+}
 
 
 @media screen and (max-width: 1023px) {
