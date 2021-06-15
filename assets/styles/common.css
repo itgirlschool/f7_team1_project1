@@ -7,10 +7,9 @@ main {
 
 .header {
     max-width: 100%;
-    margin: 0 10%;
+    padding: 0 10%;
 }
 
 .body {
     max-width: 100%;
-    margin: auto;
 }
