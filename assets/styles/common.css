@@ -1,11 +1,16 @@
-main,
-.header {
+main {
     max-width: 1440px;
     padding-left: 10%;
     padding-right: 10%;
+    margin: auto;
+}
+
+.header {
+    max-width: 100%;
+    margin: 0 10%;
 }
 
 .body {
-    max-width: 1440px;
+    max-width: 100%;
     margin: auto;
 }

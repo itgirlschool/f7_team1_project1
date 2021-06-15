@@ -99,12 +99,13 @@
 }
 
 @media screen and (max-width: 767px) {
-
     .header {
         display: flex;
         align-items: center;
 
         height: 92px;
+        max-width: 80%;
+        margin: 0 10%;
     }
 
     .header__logo {
