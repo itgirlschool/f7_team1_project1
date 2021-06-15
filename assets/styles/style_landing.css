@@ -300,7 +300,7 @@ form {
 #email,
 #product,
 #message {
-    height: 2vh;
+    height: 45px;
     padding-left: 15px;
     font-family: 'TTHoves-Regular', sans-serif;
     font-size: 14px;
@@ -314,7 +314,7 @@ form {
 }
 
 #message {
-    height: 11vh;
+    height: 120px;
 }
 
 .contact-with-us_btn {
@@ -544,9 +544,14 @@ form {
     #product,
     #message {
         padding-left: 2px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 0.2vw;
         letter-spacing: 0.001em;
+        height: 30px;
+    }
+
+    #message {
+        height: 80px;
     }
 
     .contact-with-us_text {
