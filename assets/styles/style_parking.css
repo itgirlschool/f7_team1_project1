@@ -1,14 +1,6 @@
 @import url(./fonts.css);
 @import url(./common.css);
 
-.body {
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    flex: 0 0 auto;
-}
 
 /*Шрифты*/
 .content__title {
