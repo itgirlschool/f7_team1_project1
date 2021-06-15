@@ -263,3 +263,9 @@
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .section-title {
+        font-size: 38px;
+    }
+}
