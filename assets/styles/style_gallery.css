@@ -92,7 +92,7 @@ html {
     gap: 3%;
 }
 
-img {
+.gallery_image {
     max-width: 100%;
 }
 
