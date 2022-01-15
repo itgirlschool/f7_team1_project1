@@ -1,15 +1,15 @@
 main {
-    max-width: 1440px;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: auto;
+  max-width: 1440px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
 }
 
 .header {
-    max-width: 100%;
-    padding: 0 10%;
+  max-width: 100%;
+  padding: 0 10%;
 }
 
 .body {
-    max-width: 100%;
+  max-width: 100%;
 }

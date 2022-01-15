@@ -1,36 +1,35 @@
 @font-face {
-    font-family: "TT Hoves-Bold";
-    src: url("../fonts/TTHoves-Bold.ttf");
+  font-family: "TT Hoves-Bold";
+  src: url("../fonts/TTHoves-Bold.ttf");
 }
 
 @font-face {
-    font-family: "TT Hoves-Light";
-    src: url("../fonts/TTHoves-Light.ttf");
+  font-family: "TT Hoves-Light";
+  src: url("../fonts/TTHoves-Light.ttf");
 }
 
 @font-face {
-    font-family: "TT Hoves";
-    src: url("../fonts/TTHoves-Regular.ttf");
-}
-
-
-@font-face {
-    font-family: 'TTHoves-Light';
-    src: url('../fonts/TTHoves-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TT Hoves";
+  src: url("../fonts/TTHoves-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'TTHoves-Bold';
-    src: url('../fonts/TTHoves-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "TTHoves-Light";
+  src: url("../fonts/TTHoves-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'TTHoves-Regular';
-    src: url('../fonts/TTHoves-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TTHoves-Bold";
+  src: url("../fonts/TTHoves-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTHoves-Regular";
+  src: url("../fonts/TTHoves-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }

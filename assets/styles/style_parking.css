@@ -1,100 +1,94 @@
 @import url(./fonts.css);
 @import url(./common.css);
 
-
 /*Шрифты*/
 .content__title {
-    font-size: 64px;
-    text-transform: uppercase;
-    font-style: normal;
-    margin: 0px;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0px;
 }
 
 .upper-title {
-    font-family: 'TT Hoves-Light', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    color: #BDBDBD;
-
+  font-family: "TT Hoves-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #bdbdbd;
 }
 
 .lower-title {
-    font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    color: #333333;
-
+  font-family: "TT Hoves-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #333333;
 }
 
 .section_text {
-    font-family: 'TT Hoves-Light', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: justify;
+  font-family: "TT Hoves-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: justify;
 }
 
 /*Позиционирование и размер*/
 
 .main__img {
-    margin-top: 60px;
-    margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 #image_office {
-    width: 100%;
+  width: 100%;
 }
 
 .image_section {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .image_section2 {
-    margin-top: 30px;
-    margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .image_size {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1023px) {
+  .content__title {
+    font-size: 54px;
+  }
 
-    .content__title {
-        font-size: 54px;
-    }
+  .main__img {
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-    .main__img {
-        display: grid;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1%;
+  }
 
-    .section {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 1%;
-    }
+  .image_section {
+    display: none;
+  }
 
-    .image_section {
-        display: none;
-    }
-
-    .section_text {
-        text-align: justify;
-    }
+  .section_text {
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 767px) {
-
-    .content__title {
-        font-size: 7.9vw;
-    }
+  .content__title {
+    font-size: 7.9vw;
+  }
 }

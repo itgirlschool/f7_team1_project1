@@ -1,181 +1,172 @@
 @import url("./fonts.css");
 @import url(./common.css);
 
-
 html {
-    height: 100%;
+  height: 100%;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .header {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .main {
-    flex: 2 0 auto;
+  flex: 2 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-
 
 /*Шрифты*/
 .content__title {
-    font-size: 64px;
-    text-transform: uppercase;
-    font-style: normal;
-    margin: 0px;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0px;
 }
 
 .upper-title {
-    font-family: 'TT Hoves-Light', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    color: #BDBDBD;
-
+  font-family: "TT Hoves-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #bdbdbd;
 }
 
 .lower-title {
-    font-family: 'TT Hoves-Bold', Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    color: #333333;
+  font-family: "TT Hoves-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #333333;
 }
 
 .section-text {
-    height: 36px;
-    width: 170px;
-    margin: 20px;
-    font-family: 'TT Hoves', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: start;
-
+  height: 36px;
+  width: 170px;
+  margin: 20px;
+  font-family: "TT Hoves", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: start;
 }
 
 /*Позиционирование и размер*/
 
 .gallery {
-    border-top: 1px solid #F2F2F2;
+  border-top: 1px solid #f2f2f2;
 }
 
 .gallery__list {
-    display: grid;
-    grid-template-columns: repeat(5, 18%);
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    gap: 30px;
-    padding-top: 30px;
-    padding-bottom: 71px;
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 71px;
 }
 
 .gallery__img {
-    background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 
 .section_img {
-    width: 210px;
-    height: 140px;
+  width: 210px;
+  height: 140px;
 }
 
 .side__numbers {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3%;
 }
 
 .gallery_image {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 @media screen and (max-width: 1023px) {
+  .upper-title {
+    font-size: 54px;
+  }
 
-    .upper-title {
-        font-size: 54px;
-    }
+  .lower-title {
+    font-size: 54px;
+  }
 
-    .lower-title {
-        font-size: 54px;
-    }
+  /*позиционирование и размер*/
 
-    /*позиционирование и размер*/
+  .gallery__list {
+    display: grid;
 
-    .gallery__list {
-        display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: repeat(3, 33%);
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 71px;
+  }
 
-        grid-template-columns: 31% 31% 31%;
-        grid-template-rows: repeat(3, 33%);
-        justify-items: center;
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-bottom: 71px;
-    }
+  .gallery__img {
+    display: none;
+  }
 
-    .gallery__img {
-        display: none;
-    }
+  .numbers {
+    display: none;
+  }
 
-    .numbers {
-        display: none;
-    }
+  .side__numbers {
+    display: block;
+  }
 
-    .side__numbers {
-        display: block;
-    }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .arrow {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 }
 
-
-
 @media screen and (max-width: 767px) {
+  .content__title {
+    font-size: 7.9vw;
+  }
 
-    .content__title {
-        font-size: 7.9vw;
-    }
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: repeat(3, 33%);
+    justify-items: center;
+    gap: 2vw;
+  }
 
-    .gallery__list {
-        display: grid;
-        grid-template-columns: 31% 31% 31%;
-        grid-template-rows: repeat(3, 33%);
-        justify-items: center;
-        gap: 2vw;
-    }
+  img {
+    max-width: 100%;
+  }
 
-    img {
-        max-width: 100%;
-    }
+  .gallery__img {
+    display: none;
+  }
 
-    .gallery__img {
-        display: none;
-    }
+  .numbers {
+    display: none;
+  }
 
-    .numbers {
-        display: none;
-    }
+  .side__numbers {
+    display: block;
+  }
 
-    .side__numbers {
-        display: block;
-    }
-
-    .arrow {
-        display: flex;
-        justify-content: space-between;
-    }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+  }
 }
